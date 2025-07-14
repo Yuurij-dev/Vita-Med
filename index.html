@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="src/styles.css">
+    <!-- Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Font CDN -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <title>Vita Med</title>
+</head>
+<body>
+    <header class="w-full">
+        <div class="container flex justify-between !py-4 !px-3">
+            <div class="logo select-none">
+                <h1 class="text-3xl text-[#0957de] font-bold"><span class="text-[#4089f8]">Vita</span>Med</h1>
+            </div>
+
+            <ul class="desktop-ul-header flex gap-9 text-[#2c4266] font-bold">
+                <li><a class="hover:text-[#4089f8] transition-all" href="#inicio">Início</a></li>
+                <li><a class="hover:text-[#4089f8] transition-all" href="#sobre">Sobre nós</a></li>
+                <li><a class="hover:text-[#4089f8] transition-all" href="#servicos">Serviços</a></li>
+                <li><a class="hover:text-[#4089f8] transition-all" href="#contato">Contato</a></li>
+            </ul>
+
+            <ul id="mobile-ul-header" class="mobile-ul-header transition-all !p-3 flex flex-col items-center gap-9 text-[#ffff] font-bold bg-[#4089f8] fixed z-10 w-full h-screen max-w-[300px]">
+                <div class="w-full flex justify-end">
+                    <button id="button-remove-mobile-ul" class="cursor-pointer"><i class="text-3xl fa-solid fa-xmark text-[#ffff]"></i></button>
+                </div>
+                <li><a class="" href="#inicio">Início</a></li>
+                <li><a class="" href="#sobre">Sobre nós</a></li>
+                <li><a class="" href="#servicos">Serviços</a></li>
+                <li><a class="" href="#contato">Contato</a></li>
+            </ul>
+
+            <button id="button-show-mobile-ul" class="cursor-pointer"><i class="fa-solid fa-bars text-3xl text-[#4089f8]"></i></button>
+        </div>
+    </header>
+    
+    <main id="inicio" class="w-full !my-[10px]">
+        <div class="container">
+            <section class="section-1 w-full flex items-center justify-between">
+
+                <div class="mobile-doctor flex items-center justify-end relative">
+                    <img class="image-doctor" src="src/imgs/medico.png" alt="">
+                </div>
+
+                <div class="w-1/2 flex gap-10 flex-col">
+                    <h1 class="text-[#2c4266] text-7xl font-semibold">Sua <span class="text-[#4089f8]">Saúde</span><br> Começa Aqui</h1>
+                    <p class="span-section-1 max-w-[600px] block text-[15px] text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem incidunt voluptates magnam iure at pariatur corrupti, iste maiores odio possimus nostrum, voluptatibus qui culpa dicta earum. Explicabo reiciendis harum sequi.</p>
+                    <button class="transition-all w-full max-w-[250px] !p-4 rounded-md cursor-pointer bg-[#0957de] text-white hover:bg-[#4089f8]"><i class="fa-regular fa-calendar-check text-white"></i> Faça um agendamento</button>
+                </div>
+
+                <div class="doctor-desktop w-1/2 flex items-center justify-end relative">
+                    <img class="image-doctor" src="src/imgs/medico.png" alt="">
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="w-full bg-white !p-[50px]">
+        <div class="container flex justify-between flex-wrap">
+            <div>
+                <i class="fa-solid fa-fish text-2xl text-[#4089f8]"></i>
+                <span class="text-[#4089f8] text-2xl font-semibold">Patrocínio</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-hippo  text-2xl text-[#4089f8]"></i>
+                <span class="text-[#4089f8] text-2xl font-semibold">Patrocínio</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-hospital  text-2xl text-[#4089f8]"></i>
+                <span class="text-[#4089f8] text-2xl font-semibold">Patrocínio</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-house-chimney-medical  text-2xl text-[#4089f8]"></i>
+                <span class="text-[#4089f8] text-2xl font-semibold">Patrocínio</span>
+            </div>
+            <div>
+                <i class="fa-solid fa-cloud  text-2xl text-[#4089f8]"></i>
+                <span class="text-[#4089f8] text-2xl font-semibold">Patrocínio</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="w-full !py-[70px] bg-white">
+        <div class="container">
+            <div class="flex flex-col gap-20">
+                <h1 class="text-[#2c4266] text-center text-4xl font-semibold">Temos as Opções <span class="text-[#4089f8]">Médicas</span><br>Que Você Precisa</h1>
+
+                <div class="section-3 grid grid-cols-3 gap-10">
+
+                    <div class="card w-full bg-white text-center !p-10 rounded-lg flex flex-col items-center gap-5">
+                        <div class="w-[70px] h-[70px] flex items-center justify-center rounded-full bg-[#DCFBFF] !p-4">
+                            <i class="text-4xl text-[#4089f8] fa-solid fa-heart-pulse"></i>
+                        </div>
+                        <h3 class="text-[#2c4266] text-[19px] font-semibold">Cuidado do coração</h3>
+                        <p class="text-[14px] text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt  delectus perspiciatis, quaera aperiam sint doloribus quos alias blanditiis sequi assumenda quibusdam eum doloremque! Ullam!</p>
+                    </div>
+
+                    <div class="card w-full bg-white text-center !p-10 rounded-lg flex flex-col items-center gap-5">
+                        <div class="w-[70px] h-[70px] rounded-full bg-[#DCFBFF] !p-4">
+                            <i class="text-4xl text-[#4089f8] fa-solid fa-droplet"></i>
+                        </div>
+                        <h3 class="text-[#2c4266] text-[19px] font-semibold">Doação de Sangue</h3>
+                        <p class="text-[14px] text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt  delectus perspiciatis, quaera aperiam sint doloribus quos alias blanditiis sequi assumenda quibusdam eum doloremque! Ullam!</p>
+                    </div>
+
+                    <div class="card w-full bg-white text-center !p-10 rounded-lg flex flex-col items-center gap-5">
+                        <div class="w-[70px] h-[70px] rounded-full bg-[#DCFBFF] !p-4">
+                            <i class="text-4xl text-[#4089f8] fa-solid fa-bone"></i>
+                        </div>
+                        <h3 class="text-[#2c4266] text-[19px] font-semibold">Ortopedia</h3>
+                        <p class="text-[14px] text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt  delectus perspiciatis, quaera aperiam sint doloribus quos alias blanditiis sequi assumenda quibusdam eum doloremque! Ullam!</p>
+                    </div>
+
+                    <div class="card w-full bg-white text-center !p-10 rounded-lg flex flex-col items-center gap-5">
+                        <div class="w-[70px] h-[70px] rounded-full bg-[#DCFBFF] !p-4">
+                            <i class="text-4xl text-[#4089f8] fa-solid fa-brain"></i>
+                        </div>
+                        <h3 class="text-[#2c4266] text-[19px] font-semibold">Neurologia</h3>
+                        <p class="text-[14px] text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt  delectus perspiciatis, quaera aperiam sint doloribus quos alias blanditiis sequi assumenda quibusdam eum doloremque! Ullam!</p>
+                    </div>
+
+                    <div class="card w-full bg-white text-center !p-10 rounded-lg flex flex-col items-center gap-5">
+                        <div class="w-[70px] h-[70px] rounded-full bg-[#DCFBFF] !p-4">
+                            <i class="text-4xl text-[#4089f8] fa-solid fa-tooth"></i>
+                        </div>
+                        <h3 class="text-[#2c4266] text-[19px] font-semibold">Cuidado dos Dentes</h3>
+                        <p class="text-[14px] text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt  delectus perspiciatis, quaera aperiam sint doloribus quos alias blanditiis sequi assumenda quibusdam eum doloremque! Ullam!</p>
+                    </div>
+
+                    <div class="card w-full bg-white text-center !p-10 rounded-lg flex flex-col items-center gap-5">
+                        <div class="w-[70px] h-[70px] rounded-full bg-[#DCFBFF] !p-4">
+                            <i class="text-4xl text-[#4089f8] fa-solid fa-eye"></i>
+                        </div>
+                        <h3 class="text-[#2c4266] text-[19px] font-semibold">Oftalmologia</h3>
+                        <p class="text-[14px] text-zinc-500">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt  delectus perspiciatis, quaera aperiam sint doloribus quos alias blanditiis sequi assumenda quibusdam eum doloremque! Ullam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="sobre" class="w-full !py-[70px]">
+        <div class="section-4 container flex justify-between gap-4">
+
+            <div class="section-4-child w-[50%] flex items-center justify-start ">
+                <img class="image-doctor" src="src/imgs/medico.png" alt="">
+            </div>
+
+            <div class="section-4-child w-[50%] flex flex-col gap-8 ">
+                <div class="flex flex-col gap-8">
+                    <h1 class="text-4xl font-semibold text-[#2c4266]"><span class="text-[#4089f8]">Cuidados</span> de Saúde que Colocam Você em Primeiro Lugar</h1>
+                    <span class="text-zinc-500">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt neque eum soluta id, optio tempora porro omnis illum magni quam quas dolores impedit distinctio, modi consequatur rem ex molestiae totam!</span>
+                </div>
+
+                <div class=" grid grid-cols-2 gap-5 ">
+                    <div class="section-4-content-box card !p-5 bg-white rounded-lg">
+                        <div class="w-[70px] h-[70px] rounded-full bg-[#DCFBFF] !p-4 !mb-5">
+                            <i class="text-4xl text-[#4089f8] fa-solid fa-bullseye"></i>
+                        </div>
+                        <h3 class="text-[#2c4266] text-[19px] font-semibold">Nossa Missão</h3>
+                        <p class="text-[14px] text-zinc-500">Lorem ipsum dolor cing elit. Incidunt  delectus perspiciatis, quaera aperiam sint doloribus qu eum doloremque! Ullam!</p>
+                    </div>
+
+                    <div class="section-4-content-box card !p-5 bg-white rounded-lg">
+                        <div class="w-[70px] h-[70px] rounded-full bg-[#DCFBFF] !p-4 !mb-5">
+                            <i class="text-4xl text-[#4089f8] fa-solid fa-star"></i>
+                        </div>
+                        <h3 class="text-[#2c4266] text-[19px] font-semibold">Nossa Visão</h3>
+                        <p class="text-[14px] text-zinc-500">Lorem ipsum dolor cing elit. Incidunt  delectus perspiciatis, quaera aperiam sint doloribus qu eum doloremque! Ullam!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="w-full !py-[70px] bg-white">
+        <div class="container flex flex-col gap-20">
+            <div class="w-full flex flex-col items-center gap-5">
+                <div>
+                    <h1 class="text-4xl font-semibold text-[#2c4266] text-center">Conheça Nossos <span class="text-[#4089f8]">Ótimos Médicos</span></h1>
+                </div>
+
+                <div class="w-full max-w-[500px] flex items-center justify-center">
+                    <span class="text-zinc-500 text-center">Lorem ipsum dolor sit amet, consectetur adipiesentium ratione, deleniti quidem optio voluptatum laudantium in neque.</span>
+                </div>
+            </div>
+
+            <div class="w-full flex justify-center gap-10 flex-wrap">
+                <div class="w-full max-w-[400px] card bg-white !p-5 rounded-lg flex flex-col gap-5">
+                    <div class="h-[300px] bg-zinc-200 rounded-lg">
+                        <img class="w-full h-full rounded-lg" src="src/imgs/doctor-img3.jpg" alt="doctor">
+                    </div>
+
+                    <div class="text-center">
+                        <h3 class="text-[#2c4266] font-semibold">Dr. Rodrigo</h3>
+                        <span class="text-[#4089f8] font-semibold">Especialista em Neurologia</span>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-[400px] card bg-white !p-5 rounded-lg flex flex-col gap-5">
+                    <div class="h-[300px] bg-zinc-200 rounded-lg">
+                        <img class="w-full h-full rounded-lg" src="src/imgs/doctor-img2.jpg" alt="doctor">
+                    </div>
+
+                    <div class="text-center">
+                        <h3 class="text-[#2c4266] font-semibold">Drs. Felipe</h3>
+                        <span class="text-[#4089f8] font-semibold">Especialista em Ortopedia</span>
+                    </div>
+                </div>
+
+                <div class="w-full max-w-[400px] card bg-white !p-5 rounded-lg flex flex-col gap-5">
+                    <div class="h-[300px] bg-zinc-200 rounded-lg ">
+                        <img class="w-full h-full rounded-lg" src="src/imgs/doctor-img1.jpg" alt="doctor">
+                    </div>
+
+                    <div class="text-center">
+                        <h3 class="text-[#2c4266] font-semibold">Dra. Rosana</h3>
+                        <span class="text-[#4089f8] font-semibold">Especialista Odontológico</span>
+                    </div>
+                </div>
+                
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section class="w-full !py-[70px]">
+        <div class="section-5 container flex justify-between items-center gap-10">
+
+            <div class="w-full flex flex-col gap-5">
+                <h1 class="text-4xl font-semibold text-[#2c4266] ">Marque uma <br><span class="text-[#4089f8]">Consulta</span></h1>
+                <div class="w-full max-w-[500px] flex items-center justify-center">
+                    <span class="text-zinc-500">Lorem ipsum dolor sit amet, consectetur adipiesentium ratione, deleniti quidem optio voluptatum laudantium in neque.</span>
+                </div>
+            </div>
+
+            <a href="https://w.app/adr6a1" target="_blank" class="text-center transition-all w-full max-w-[450px] !p-4 rounded-md cursor-pointer bg-[#25d366] text-white hover:bg-[#4089f8] flex items-center justify-center gap-2">WhatsApp <i class="fa-brands fa-whatsapp text-[20px]"></i></a>
+        </div>
+    </section>
+
+    <section class="w-full !py-[70px] bg-white">
+        <div class="container">
+
+            <div class="w-full flex items-center flex-col gap-5 !mb-[40px]">
+                <h1 class="text-4xl font-semibold text-[#2c4266] text-center">O que os <span class="text-[#4089f8]">Clientes Dizem</span></h1>
+                <div class="w-full max-w-[500px] flex items-center justify-center">
+                    <span class="text-zinc-500 text-center">Lorem ipsum dolor sit amet, consectetur adipiesentium ratione, deleniti quidem optio voluptatum laudantium in neque.</span>
+                </div>
+            </div>
+
+            <div class="grid-template">
+
+                <div class="w-full card bg-white !p-5 rounded-lg flex flex-col items-center gap-5">
+                    <div class="w-[80px] h-[80px] rounded-full bg-[#DCFBFF] ">
+                        <img class="w-full h-full rounded-full" src="src/imgs/persons/person3.jfif" alt="">
+                    </div>
+
+                    <div class="text-center">
+                        <h3 class="text-[#4089f8] text-2xl font-semibold">Yuri de Jesus</h3>
+                        <span class="flex items-center justify-center gap-1">5.0 <i class="fa-solid fa-star text-[12px] text-yellow-400"></i></span>
+                        <p class="text-zinc-500 text-[14px] font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas vel, porro beatae omnis sint consequatur architecto laborum voluptate culpa dolores laboriosam perspiciatis veritatis maiores rem. Explicabo odit nostrum voluptas.</p>
+                    </div>
+                </div>
+
+                <div class="w-full card bg-white !p-5 rounded-lg flex flex-col items-center gap-5">
+                    <div class="w-[80px] h-[80px] rounded-full bg-[#DCFBFF]">
+                        <img class="w-full h-full rounded-full" src="src/imgs/persons/person2.jfif" alt="">
+                    </div>
+
+                    <div class="text-center">
+                        <h3 class="text-[#4089f8] text-2xl font-semibold">Isabela Almeida</h3>
+                        <span class="flex items-center justify-center gap-1">5.0 <i class="fa-solid fa-star text-[12px] text-yellow-400"></i></span>
+                        <p class="text-zinc-500 text-[14px] font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas vel, porro beatae omnis sint consequatur architecto laborum voluptate culpa dolores laboriosam perspiciatis veritatis maiores rem. Explicabo odit nostrum voluptas.</p>
+                    </div>
+                </div>
+
+                <div class="w-full card bg-white !p-5 rounded-lg flex flex-col items-center gap-5">
+                    <div class="w-[80px] h-[80px] rounded-full bg-[#DCFBFF]">
+                        <img class="w-full h-full rounded-full" src="src/imgs/persons/person1.jfif" alt="">
+                    </div>
+
+                    <div class="text-center">
+                        <h3 class="text-[#4089f8] text-2xl font-semibold">Jorge Augusto</h3>
+                        <span class="flex items-center justify-center gap-1">5.0 <i class="fa-solid fa-star text-[12px] text-yellow-400"></i></span>
+                        <p class="text-zinc-500 text-[14px] font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas vel, porro beatae omnis sint consequatur architecto laborum voluptate culpa dolores laboriosam perspiciatis veritatis maiores rem. Explicabo odit nostrum voluptas.</p>
+                    </div>
+                </div>
+
+                <div class="w-full card bg-white !p-5 rounded-lg flex flex-col items-center gap-5">
+                    <div class="w-[80px] h-[80px] rounded-full bg-[#DCFBFF] ">
+                        <img class="w-full h-full rounded-full" src="src/imgs/persons/person4.jfif" alt="">
+                    </div>
+
+                    <div class="text-center">
+                        <h3 class="text-[#4089f8] text-2xl font-semibold">João Pedro</h3>
+                        <span class="flex items-center justify-center gap-1">5.0 <i class="fa-solid fa-star text-[12px] text-yellow-400"></i></span>
+                        <p class="text-zinc-500 text-[14px] font-semibold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati voluptas vel, porro beatae omnis sint consequatur architecto laborum voluptate culpa dolores laboriosam perspiciatis veritatis maiores rem. Explicabo odit nostrum voluptas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="section-7 w-full !py-[70px]">
+        <div class="container">
+            <div class="w-full bg-[#0957de] rounded-md !p-5">
+                <div class="text-center flex gap-10 items-center justify-center flex-col">
+                    <h1 class="text-5xl text-white font-semibold">Manter a Saúde Física e Mental</h1>
+                    <p class="block w-full max-w-[600px] text-white text-[14px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Officia nobis perspiciatis enim repellendus inventore molestiae veniam eaque quidem saepe reiciendis, rem nostrum delectus </p>
+                    <a href="https://w.app/adr6a1" target="_blank" class="text-center transition-all w-full max-w-[450px] !p-4 rounded-md cursor-pointer bg-[#25d366] text-white hover:bg-[#4089f8] flex items-center justify-center gap-2">WhatsApp <i class="fa-brands fa-whatsapp text-[20px]"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="w-full !py-[70px] bg-[#0f2852] ">
+        <section class="container flex justify-between flex-wrap">
+            <div class="w-1/3 flex flex-col gap-5">
+                <div class="logo select-none">
+                    <h1 class="text-3xl text-[#0957de] font-bold"><span class="text-[#4089f8]">Vita</span>Med</h1>
+                </div>
+                <span class="text-zinc-400 text-[14px]">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore consequuntur fugiat, accusantium aliquid distinctio iste, magnam possimus enim repudiandae aliquam saepe! Harum aut vitae quaerat repudiandae tempora recusandae eaque maxime.</span>
+            </div>
+
+            <div class="w-1/3 flex flex-col items-center">
+                <div>
+                    <h3 class="text-white font-semibold text-[18px] !mb-[20px]">Links Rápidos</h3>
+                    <ul class="flex flex-col items-start gap-9 text-zinc-400 font-bold">
+                        <li><a class="hover:text-[#4089f8] transition-all" href="#">Início</a></li>
+                        <li><a class="hover:text-[#4089f8] transition-all" href="#">Sobre nós</a></li>
+                        <li><a class="hover:text-[#4089f8] transition-all" href="#">Serviços</a></li>
+                        <li><a class="hover:text-[#4089f8] transition-all" href="#">Contato</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="w-1/3">
+                <h3 class="text-white font-semibold text-[18px] !mb-[20px]">Contatos</h3>
+                <ul class="text-zinc-400 flex flex-col gap-5">
+                    <li><span>empresa@email.com</span></li>
+                    <li><span>Rua calçada, Casa 02, Brasília - DF</span></li>
+                    <li><span>+55 61 912345678</span></li>
+                </ul>
+            </div>
+        </section>
+    </footer>
+
+    <button id="backToTop"><i class="fa-solid fa-arrow-up"></i></button>
+    <script src="src/script.js"></script>
+</body>
+</html>
